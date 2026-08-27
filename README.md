@@ -1,4 +1,4 @@
-# Nombre del proyecto
+# Detector memes silly hamster
 
 ## tarea-02
 
