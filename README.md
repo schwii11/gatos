@@ -16,8 +16,8 @@ Proyecto de reconocimiento de gestos, utilizando Python y MediaPipe. Realizado t
 | --- | --- | --- | --- |
 | 1 | Silly hamster | Predeterminado cuando no se realiza ningún gesto | ![titulo](./memes/sillyhamster.jpeg)
 | 2 | Corazón hamster | Ambas manos en forma de corazón | ![titulo](./memes/corazonhamster.jpeg)
-| 3 | Feliz hamster | Al sonreir y mostrar dientes | ![titulo](./memes/felizhamster.jpeg)
-| 4 | Gym hamster | Brazo flectado hacia arriba con la mano en puño | ![titulo](./memes/gymhamster.jpeg)
+| 3 | Feliz hamster | Sonrisa con boca abierta | ![titulo](./memes/felizhamster.jpeg)
+| 4 | Gym hamster | Puño levantado junto a la cabeza | ![titulo](./memes/gymhamster.jpeg)
 | 5 | Hamster | Ambas palmas juntas | ![titulo](./memes/hamster.jpeg)
 | 6 | Muehjej hamster | Ambos dedos índices juntos | ![titulo](./memes/muehjejhamster.jpeg)
 | 7 | No sé hamster | Ambas palmas mirando hacia arriba | ![titulo](./memes/nosehamster.jpeg)
