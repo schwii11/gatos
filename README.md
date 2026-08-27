@@ -1,4 +1,4 @@
-# Meowmeow cat cam meme detector
+# Detector meme Silly Hamster
 
 Point your webcam at yourself, make a face/hand gesture, get a cat meme back in real time. Runs either as a desktop app (OpenCV windows) or entirely in the browser (MediaPipe WASM, no install).
 
@@ -10,20 +10,18 @@ Two windows/panes side by side:
 
 Checked in this order — when a pose could match more than one, the earlier one wins.
 
-| # | Gesture | How to trigger |
+| # | Gesto | Cómo activar |
 |---|---|---|
-| 1 | Muehehe | Both hands up, index fingers only, tips touching |
-| 2 | Devo cat | Both hands up, above the top of your head |
-| 3 | Crash out cord chewing kitty | Both hands up beside your face to hold yummy electrical cable |
-| 4 | I will punch you | One hand, all four fingers curled |
-| 5 | EHHEHEEEHEEEE | Thumb + pinky out, rockstar cat |
-| 6 | Shhh silenced cat | Index finger only, tip resting on your mouth |
-| 7 | Erm ackshuALLY! cat | Index finger only, held away from your face |
-| 8 | Shocked/kidnapped cat | Hand cover mouth |
-| 9 | gGIMME MONIE!! | One open palm, all fingers extended, away from your face |
-| 10 | Side eye cat | Turn your head 15°+ either way (real head-pose yaw) |
-| 11 | Pokercat | Default |
-| 12 | Spinny OIIAI cat | You spin!!!! |
+| 1 | Silly hamster | Predeterminado cuando no se realiza ningún gesto |
+| 2 | Corazón hamster | Ambas manos en forma de corazón |
+| 3 | Feliz hamster | Al sonreir y mostrar dientes |
+| 4 | Gym hamster | Brazo flectado hacia arriba con la mano en puño |
+| 5 | Hamster | Ambas palmas juntas |
+| 6 | Muehjej hamster | Ambos dedos índices juntos |
+| 7 | No sé hamster | Ambas palmas mirando hacia arriba |
+| 8 | Paz hamster | Una mano con dedos índice y dedo medio levantados y los demás cerrados |
+| 9 | Pizza hamster | Ambas manos con 4 dedos estirados apuntándose entre si |
+
 
 
 Meme images live in `memes/`. A couple of gestures pick randomly between multiple images.
