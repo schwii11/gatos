@@ -19,7 +19,7 @@ Proyecto de reconocimiento de gestos, utilizando Python y MediaPipe. Realizado t
 | 3 | Feliz hamster | Sonrisa con boca abierta | ![titulo](./memes/felizhamster.jpeg)
 | 4 | Gym hamster | Puño levantado junto a la cabeza | ![titulo](./memes/gymhamster.jpeg)
 | 5 | Hamster | Ambas palmas juntas | ![titulo](./memes/hamster.jpeg)
-| 6 | Muehjej hamster | Ambos dedos índices juntos | ![titulo](./memes/muehjejhamster.jpeg)
+| 6 | Muehjej hamster | Unir las puntas de ambos índices y también las puntas de ambos pulgares | ![titulo](./memes/muehjejhamster.jpeg)
 | 7 | No sé hamster | Ambas palmas mirando hacia arriba | ![titulo](./memes/nosehamster.jpeg)
 | 8 | Paz hamster | Una mano con dedos índice y dedo medio levantados y los demás cerrados | ![titulo](./memes/pazhamster.jpeg)
 | 9 | Pizza hamster | Ambas manos con 4 dedos estirados apuntándose entre si | ![titulo](./memes/pizzahamster.jpeg)
