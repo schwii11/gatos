@@ -46,5 +46,13 @@ Luego elegimos las nuevas imágenes que utilizaríamos para nuestro proyecto (si
   // poner en el buscador, el cual llevará directo a la interacción.
 ```
 
+## Pasos a seguir según lo que nos dió la IA
 
+![titulo](./imagenes/pasoia1.png)
+
+![titulo](./imagenes/pasoia2.png)
+
+![titulo](./imagenes/pasoia3.png)
+
+![titulo](./imagenes/pasoia4.png)
 
