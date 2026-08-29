@@ -25,7 +25,8 @@ Proyecto de reconocimiento de gestos, utilizando Python y MediaPipe. Realizado t
 | 8 | Paz hamster | Una mano con dedos índice y dedo medio levantados, los demás dedos cerrados en forma de semi puño | ![titulo](./memes/pazhamster.jpeg)
 | 9 | Pizza hamster | Ambas manos con 4 dedos estirados apuntándose entre si | ![titulo](./memes/pizzahamster.jpeg)
 
-- [carpeta de imágenes](./nombreCarpeta)
+https://github.com/schwii11/gatos/tree/main/memes
+- [carpeta de imágenes](./https://github.com/schwii11/gatos/tree/main/memes)
 
 - [video](./)
 
