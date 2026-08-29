@@ -30,8 +30,21 @@ Proyecto de reconocimiento de gestos, utilizando Python y MediaPipe. Realizado t
 
 - [video](./)
 
+## Proceso del proyecto
 
+Lo primero que realizamos ambas de manera individual fue hacer el ejercicio sobre el repositorio gatos, el cual nos sirvió como base para el proyecto.
 
+Luego elegimos las nuevas imágenes que utilizaríamos para nuestro proyecto (silly hamster), donde no quisimos quedarnos solo con 6 imágenes que era lo mínimo del proyecto, si no que decidimos elegir un total de 9. Donde después con ayuda de la IA a utilizar "CODEX" pudimos realizar el nuevo localhost para nuestro proyecto con el reconocimiento de los nuevos gestos e imágenes. Donde los pasos a seguir son:
+
+```
+**Poner en Powershelf**
+- Set-Location "C:\Users\katar\OneDrive\Desktop\dispositicos perifericos\ejercicios\ejercicio 01\+01 mofificacion repo\gatos-main"
+  // esta es la localización de la carpeta en la cual se encuentra el proyecto principal, pero modificando las imágenes según nuestro proyecto.
+- py -m http.server 8001
+  // este es el nuevo servidor, el cual se actualizó debido a que no se podía ocupar el mismo porque seguía manteniendo las imágenes originales.
+- http://localhost:8001
+  // poner en el buscador, el cual llevará directo a la interacción.
+```
 
 
 
