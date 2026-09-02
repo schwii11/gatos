@@ -1,58 +1,81 @@
-# Detector memes silly hamster
+# Meowmeow cat cam meme detector
 
-## tarea-02
+Point your webcam at yourself, make a face/hand gesture, get a cat meme back in real time. Runs either as a desktop app (OpenCV windows) or entirely in the browser (MediaPipe WASM, no install).
 
-- **Isidora Pérez**
-- **Katalina Ríos**
+Two windows/panes side by side: 
+- **Camera** — your webcam feed with hand landmarks drawn on top, plus a live debug readout in the corner
+- **Meme** — the meme matching whatever gesture you're currently making
 
-- Asignatura: Dispositivos Periféricos y Plataformas para la Interacción Digital **DIS9087**
+## Gestures
 
-Proyecto de reconocimiento de gestos, utilizando Python y MediaPipe. Realizado tomando como referencia este repositorio:
+Checked in this order — when a pose could match more than one, the earlier one wins.
 
-- <https://github.com/catherpiee/meowmeowcatcam>
-- En la asignatura de dispositivos periféricos realizamos un proyecto, el cual es capaz de detectar gestos, nosotras nos quisimos basar en memes actuales y nos basamos en un personaje específico llamado Silly Hamster, el cual en Pinterest se puede buscar y te aparecen diferentes imágenes con este personaje realizando diferentes acciones.
-  
-## Gestos
-| # | *Gesto* | *Cómo se activa*| *imagen* |
-| --- | --- | --- | --- |
-| 1 | Silly hamster | Predeterminado cuando no se realiza ningún gesto | ![titulo](./memes/sillyhamster.jpeg)
-| 2 | Corazón hamster | Realizar un corazón coreano con ambas manos, juntando pulgar e índice | ![titulo](./memes/corazonhamster.jpeg)
-| 3 | Feliz hamster | Sonrisa con boca abierta | ![titulo](./memes/felizhamster.jpeg)
-| 4 | Gym hamster | Puño levantado junto a la cabeza | ![titulo](./memes/gymhamster.jpeg)
-| 5 | Hamster | Ambas palmas semi  juntas | ![titulo](./memes/hamster.jpeg)
-| 6 | Muehjej hamster |Unir las puntas de ambos índices | ![titulo](./memes/muehjejhamster.jpeg)
-| 7 | No sé hamster |Levantar ambas palmas abiertas hacia arriba y hacia los lados | ![titulo](./memes/nosehamster.jpeg)
-| 8 | Paz hamster | Una mano con dedos índice y dedo medio levantados, los demás dedos cerrados en forma de semi puño | ![titulo](./memes/pazhamster.jpeg)
-| 9 | Pizza hamster | Ambas manos con 4 dedos estirados apuntándose entre si | ![titulo](./memes/pizzahamster.jpeg)
+| # | Gesture | How to trigger |
+|---|---|---|
+| 1 | Muehehe | Both hands up, index fingers only, tips touching |
+| 2 | Devo cat | Both hands up, above the top of your head |
+| 3 | Crash out cord chewing kitty | Both hands up beside your face to hold yummy electrical cable |
+| 4 | I will punch you | One hand, all four fingers curled |
+| 5 | EHHEHEEEHEEEE | Thumb + pinky out, rockstar cat |
+| 6 | Shhh silenced cat | Index finger only, tip resting on your mouth |
+| 7 | Erm ackshuALLY! cat | Index finger only, held away from your face |
+| 8 | Shocked/kidnapped cat | Hand cover mouth |
+| 9 | gGIMME MONIE!! | One open palm, all fingers extended, away from your face |
+| 10 | Side eye cat | Turn your head 15°+ either way (real head-pose yaw) |
+| 11 | Pokercat | Default |
+| 12 | Spinny OIIAI cat | You spin!!!! |
 
-- *carpeta de imágenes:* https://github.com/schwii11/gatos/tree/main/memes
-- *video del proyecto:*
 
-- [video](./)
+Meme images live in `memes/`. A couple of gestures pick randomly between multiple images.
 
-## Proceso del proyecto
+## Running it — desktop (Python)
 
-Lo primero que realizamos ambas de manera individual fue hacer el ejercicio sobre el repositorio gatos, el cual nos sirvió como base para el proyecto.
+Requires Python 3 and a webcam.
 
-Luego elegimos las nuevas imágenes que utilizaríamos para nuestro proyecto (silly hamster), donde no quisimos quedarnos solo con 6 imágenes que era lo mínimo del proyecto, si no que decidimos elegir un total de 9. Donde después con ayuda de la IA a utilizar "CODEX" pudimos realizar el nuevo localhost para nuestro proyecto con el reconocimiento de los nuevos gestos e imágenes. Donde los pasos a seguir son:
+Easiest way: just double-click **`Launch Gesture Meme.command`**. First run takes a minute to set itself up (installs everything automatically), then launches straight away. Every run after that is instant.
+
+**First time opening it:** macOS will warn "cannot be opened because it is from an unidentified developer" — this is normal for any downloaded script, not specific to this one. Right-click the file → **Open** → click **Open** in the dialog that appears. You only need to do this once.
+
+Or manually, if you prefer Terminal:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python3 gesture_meme.py
+```
+
+Press `q` or `Esc` in the Camera window to quit.
+
+## Running it — browser
+
+No install needed, but the webcam API requires serving over HTTP (opening `index.html` directly as a `file://` URL will not get camera permission). From this folder:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000` and allow camera access. Models load from Google's hosted MediaPipe CDN at runtime, so nothing local is needed for the browser version.
+
+## Live debug HUD
+
+The Camera window always shows a small readout in the top-left corner:
 
 ```
-**Poner en Powershelf**
-- Set-Location "C:\Users\katar\OneDrive\Desktop\dispositicos perifericos\ejercicios\ejercicio 01\+01 mofificacion repo\gatos-main"
-  // esta es la localización de la carpeta en la cual se encuentra el proyecto principal, pero modificando las imágenes según nuestro proyecto.
-- py -m http.server 8001
-  // este es el nuevo servidor, el cual se actualizó debido a que no se podía ocupar el mismo porque seguía manteniendo las imágenes originales.
-- http://localhost:8001
-  // poner en el buscador, el cual llevará directo a la interacción.
+gesture: sideEyeCat
+yaw: +18.4 deg  (side-eye thr +/-15.0)
 ```
 
-## Pasos a seguir según lo que nos dió la IA
+Useful for tuning the detection thresholds at the top of `gesture_meme.py` / `app.js` if a gesture is triggering too easily or not easily enough for your setup/lighting.
 
-![titulo](./imagenes/pasoia1.png)
+## Project layout
 
-![titulo](./imagenes/pasoia2.png)
-
-![titulo](./imagenes/pasoia3.png)
-
-![titulo](./imagenes/pasoia4.png)
+```
+gesture_meme.py   desktop version (OpenCV + MediaPipe Python tasks API)
+app.js            browser version (MediaPipe tasks-vision WASM)
+index.html        browser UI shell
+memes/            meme images (+ one video, unused for now)
+models/           MediaPipe .task model files used by the desktop version
+requirements.txt  Python dependencies
+```
 
