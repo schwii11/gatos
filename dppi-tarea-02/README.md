@@ -107,5 +107,5 @@ El siguiente video muestra el funcionamiento de la aplicación y los gestos impl
 
 [Ver video demostrativo](video/video_repositorio%20sillyhamster.mp4)
 
-**Video:** Pendiente de agregar.
+*Video:* https://github.com/schwii11/gatos/blob/main/dppi-tarea-02/video/video_repositorio%20sillyhamster.mp4
 
