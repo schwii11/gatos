@@ -65,6 +65,7 @@ https://github.com/catherpiee/meowmeowcatcam
 Todas las imágenes utilizadas por la aplicación se encuentran en:
 
 *carpeta imágenes*
+
 https://github.com/schwii11/gatos/tree/main/memes
 
 ## Proceso del proyecto
