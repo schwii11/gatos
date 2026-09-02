@@ -91,7 +91,7 @@ http://localhost:8001
 
 Se debe permitir el acceso a la cámara web. Para recargar la versión más reciente del proyecto en el navegador, utilizar `Ctrl + F5`.
 
-## Ejecución con Python
+### Ejecución con Python
 
 Instalar las dependencias y ejecutar:
 
