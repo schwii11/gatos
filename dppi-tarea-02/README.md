@@ -2,8 +2,8 @@
 
 ## Integrantes
 
-- Integrante 1: **Isidora Perez**
-- Integrante 2: **Katalina Rios**
+- Integrante 1: **Isidora Pérez**
+- Integrante 2: **Katalina Ríos**
 
 ## Asignatura
 
@@ -12,6 +12,8 @@
 ## Descripción del proyecto
 
 Proyecto de reconocimiento de gestos utilizando Python, MediaPipe y una cámara web. La aplicación identifica gestos de las manos y expresiones faciales, y muestra en pantalla una imagen de hámster asociada a cada interacción.
+
+En la asignatura de dispositivos periféricos realizamos un proyecto, el cual es capaz de detectar gestos, nosotras nos quisimos basar en memes actuales y nos basamos en un personaje específico llamado Silly Hamster, el cual en Pinterest se puede buscar y te aparecen diferentes imágenes con este personaje realizando diferentes acciones.
 
 El proyecto fue realizado tomando como referencia el repositorio:
 
@@ -38,17 +40,18 @@ https://github.com/catherpiee/meowmeowcatcam
 
 ## Gestos
 
-| # | Nombre | Cómo se activa | Imagen |
-|---|---|---|---|
-| 1 | Silly hamster | No realizar ningún gesto. | `sillyhamster.jpeg` |
-| 2 | Corazón hamster | Hacer un corazón coreano con una mano, juntando pulgar e índice. | `corazonhamster.jpeg` |
-| 3 | Feliz hamster | Sonreír y abrir la boca. | `felizhamster.jpeg` |
-| 4 | Gym hamster | Levantar un puño cerca de la parte superior de la cara. | `gymhamster.jpeg` |
-| 5 | Hamster | Juntar ambas palmas abiertas. | `hamster.jpeg` |
-| 6 | Muehjej hamster | Unir las puntas de ambos índices y también las puntas de ambos pulgares. | `muehjejhamster.jpeg` |
-| 7 | No sé hamster | Levantar ambas palmas abiertas hacia arriba y hacia los lados, como un gesto de pregunta. | `nosehamster.jpeg` |
-| 8 | Paz hamster | Levantar el índice y el dedo medio de una mano, manteniendo los demás cerrados. | `pazhamster.jpeg` |
-| 9 | Pizza hamster | Mantener ambas manos abiertas apuntándose entre sí. | `pizzahamster.jpeg` |
+## Gestos
+| # | *Gesto* | *Cómo se activa*| *imagen* |
+| --- | --- | --- | --- |
+| 1 | Silly hamster | Predeterminado cuando no se realiza ningún gesto | ![titulo](./memes/sillyhamster.jpeg)
+| 2 | Corazón hamster | Realizar un corazón coreano con ambas manos, juntando pulgar e índice | ![titulo](./memes/corazonhamster.jpeg)
+| 3 | Feliz hamster | Sonrisa con boca abierta | ![titulo](./memes/felizhamster.jpeg)
+| 4 | Gym hamster | Puño levantado junto a la cabeza | ![titulo](./memes/gymhamster.jpeg)
+| 5 | Hamster | Ambas palmas semi  juntas | ![titulo](./memes/hamster.jpeg)
+| 6 | Muehjej hamster |Unir las puntas de ambos índices | ![titulo](./memes/muehjejhamster.jpeg)
+| 7 | No sé hamster |Levantar ambas palmas abiertas hacia arriba y hacia los lados | ![titulo](./memes/nosehamster.jpeg)
+| 8 | Paz hamster | Una mano con dedos índice y dedo medio levantados, los demás dedos cerrados en forma de semi puño | ![titulo](./memes/pazhamster.jpeg)
+| 9 | Pizza hamster | Ambas manos con 4 dedos estirados apuntándose entre si | ![titulo](./memes/pizzahamster.jpeg)
 
 ## Ajustes de detección
 
@@ -61,15 +64,21 @@ https://github.com/catherpiee/meowmeowcatcam
 
 Todas las imágenes utilizadas por la aplicación se encuentran en:
 
-```text
-memes/
-```
+*carpeta imágenes*
+https://github.com/schwii11/gatos/tree/main/memes
 
-## Ejecución de la aplicación web
+## Proceso del proyecto
+
+Lo primero que realizamos ambas de manera individual fue hacer el ejercicio sobre el repositorio gatos, el cual nos sirvió como base para el proyecto.
+
+Luego elegimos las nuevas imágenes que utilizaríamos para nuestro proyecto (silly hamster), donde no quisimos quedarnos solo con 6 imágenes que era lo mínimo del proyecto, si no que decidimos elegir un total de 9. Donde después con ayuda de la IA a utilizar "CODEX" pudimos realizar el nuevo localhost para nuestro proyecto con el reconocimiento de los nuevos gestos e imágenes. Donde los pasos a seguir son:
+
+### Ejecución de la aplicación web
 
 Desde la carpeta raíz del proyecto, ejecutar:
 
 ```powershell
+Set-Location
 python -m http.server 8001
 ```
 
