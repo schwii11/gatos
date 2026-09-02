@@ -102,8 +102,9 @@ python gesture_meme.py
 Presionar `q` o `Esc` para cerrar la aplicación.
 
 ## Video demostrativo
+El siguiente video muestra el funcionamiento de la aplicación y los gestos implementados en el proyecto:
 
-Agregar aquí el enlace o archivo de un video de máximo 30 segundos que muestre la aplicación en funcionamiento y al menos seis de los gestos implementados.
+[Ver video demostrativo](video/video_repositorio%20sillyhamster.mp4)
 
 **Video:** Pendiente de agregar.
 
